@@ -117,6 +117,8 @@ export class AnnotationsPanel extends UIPanel {
 		link.textContent = note.text;
 		link.onclick = () => {
 
+			
+			console.log("Annotation CFI:", note.href);
 			this.reader.rendition.display(note.href);
 			return false;
 		};
